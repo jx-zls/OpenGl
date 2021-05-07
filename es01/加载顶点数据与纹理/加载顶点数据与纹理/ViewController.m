@@ -25,6 +25,7 @@
     [self configureContext];
     [self confitureVertex];
     [self configureTexture];
+
     
 }
 

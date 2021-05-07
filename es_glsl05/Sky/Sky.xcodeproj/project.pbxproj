@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B1ED678264507F00026C5AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED677264507F00026C5AD /* AppDelegate.m */; };
+		9B1ED67B264507F00026C5AD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED67A264507F00026C5AD /* SceneDelegate.m */; };
+		9B1ED67E264507F00026C5AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED67D264507F00026C5AD /* ViewController.m */; };
+		9B1ED681264507F00026C5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED67F264507F00026C5AD /* Main.storyboard */; };
+		9B1ED683264507F20026C5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED682264507F20026C5AD /* Assets.xcassets */; };
+		9B1ED686264507F20026C5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED684264507F20026C5AD /* LaunchScreen.storyboard */; };
+		9B1ED689264507F20026C5AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED688264507F20026C5AD /* main.m */; };
+		9B1ED6922645083D0026C5AD /* SkyEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED6912645083D0026C5AD /* SkyEffect.m */; };
+		9B1ED69726450DC30026C5AD /* SkyboxShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED69526450DC30026C5AD /* SkyboxShader.vsh */; };
+		9B1ED69826450DC30026C5AD /* SkyboxShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED69626450DC30026C5AD /* SkyboxShader.fsh */; };
+		9B1ED6A32645183F0026C5AD /* starship.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ED69E2645183E0026C5AD /* starship.c */; };
+		9B1ED6A42645183F0026C5AD /* skybox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED6A02645183E0026C5AD /* skybox2.png */; };
+		9B1ED6A52645183F0026C5AD /* skybox3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED6A12645183E0026C5AD /* skybox3.png */; };
+		9B1ED6A62645183F0026C5AD /* skybox1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1ED6A22645183F0026C5AD /* skybox1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B1ED673264507F00026C5AD /* Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1ED676264507F00026C5AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B1ED677264507F00026C5AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B1ED679264507F00026C5AD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9B1ED67A264507F00026C5AD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9B1ED67C264507F00026C5AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B1ED67D264507F00026C5AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B1ED680264507F00026C5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B1ED682264507F20026C5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B1ED685264507F20026C5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B1ED687264507F20026C5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1ED688264507F20026C5AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B1ED6902645083D0026C5AD /* SkyEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyEffect.h; sourceTree = "<group>"; };
+		9B1ED6912645083D0026C5AD /* SkyEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyEffect.m; sourceTree = "<group>"; };
+		9B1ED69526450DC30026C5AD /* SkyboxShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SkyboxShader.vsh; sourceTree = "<group>"; };
+		9B1ED69626450DC30026C5AD /* SkyboxShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SkyboxShader.fsh; sourceTree = "<group>"; };
+		9B1ED69E2645183E0026C5AD /* starship.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = starship.c; sourceTree = "<group>"; };
+		9B1ED69F2645183E0026C5AD /* starship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = starship.h; sourceTree = "<group>"; };
+		9B1ED6A02645183E0026C5AD /* skybox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox2.png; sourceTree = "<group>"; };
+		9B1ED6A12645183E0026C5AD /* skybox3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox3.png; sourceTree = "<group>"; };
+		9B1ED6A22645183F0026C5AD /* skybox1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B1ED670264507F00026C5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B1ED66A264507F00026C5AD = {
+			isa = PBXGroup;
+			children = (
+				9B1ED675264507F00026C5AD /* Sky */,
+				9B1ED674264507F00026C5AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B1ED674264507F00026C5AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B1ED673264507F00026C5AD /* Sky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B1ED675264507F00026C5AD /* Sky */ = {
+			isa = PBXGroup;
+			children = (
+				9B1ED6A22645183F0026C5AD /* skybox1.png */,
+				9B1ED6A02645183E0026C5AD /* skybox2.png */,
+				9B1ED6A12645183E0026C5AD /* skybox3.png */,
+				9B1ED69E2645183E0026C5AD /* starship.c */,
+				9B1ED69F2645183E0026C5AD /* starship.h */,
+				9B1ED676264507F00026C5AD /* AppDelegate.h */,
+				9B1ED677264507F00026C5AD /* AppDelegate.m */,
+				9B1ED679264507F00026C5AD /* SceneDelegate.h */,
+				9B1ED67A264507F00026C5AD /* SceneDelegate.m */,
+				9B1ED67C264507F00026C5AD /* ViewController.h */,
+				9B1ED67D264507F00026C5AD /* ViewController.m */,
+				9B1ED6902645083D0026C5AD /* SkyEffect.h */,
+				9B1ED6912645083D0026C5AD /* SkyEffect.m */,
+				9B1ED69626450DC30026C5AD /* SkyboxShader.fsh */,
+				9B1ED69526450DC30026C5AD /* SkyboxShader.vsh */,
+				9B1ED67F264507F00026C5AD /* Main.storyboard */,
+				9B1ED682264507F20026C5AD /* Assets.xcassets */,
+				9B1ED684264507F20026C5AD /* LaunchScreen.storyboard */,
+				9B1ED687264507F20026C5AD /* Info.plist */,
+				9B1ED688264507F20026C5AD /* main.m */,
+			);
+			path = Sky;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B1ED672264507F00026C5AD /* Sky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B1ED68C264507F20026C5AD /* Build configuration list for PBXNativeTarget "Sky" */;
+			buildPhases = (
+				9B1ED66F264507F00026C5AD /* Sources */,
+				9B1ED670264507F00026C5AD /* Frameworks */,
+				9B1ED671264507F00026C5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sky;
+			productName = Sky;
+			productReference = 9B1ED673264507F00026C5AD /* Sky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B1ED66B264507F00026C5AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9B1ED672264507F00026C5AD = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 9B1ED66E264507F00026C5AD /* Build configuration list for PBXProject "Sky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B1ED66A264507F00026C5AD;
+			productRefGroup = 9B1ED674264507F00026C5AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B1ED672264507F00026C5AD /* Sky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B1ED671264507F00026C5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1ED6A52645183F0026C5AD /* skybox3.png in Resources */,
+				9B1ED6A42645183F0026C5AD /* skybox2.png in Resources */,
+				9B1ED686264507F20026C5AD /* LaunchScreen.storyboard in Resources */,
+				9B1ED683264507F20026C5AD /* Assets.xcassets in Resources */,
+				9B1ED69826450DC30026C5AD /* SkyboxShader.fsh in Resources */,
+				9B1ED69726450DC30026C5AD /* SkyboxShader.vsh in Resources */,
+				9B1ED681264507F00026C5AD /* Main.storyboard in Resources */,
+				9B1ED6A62645183F0026C5AD /* skybox1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B1ED66F264507F00026C5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1ED67E264507F00026C5AD /* ViewController.m in Sources */,
+				9B1ED6A32645183F0026C5AD /* starship.c in Sources */,
+				9B1ED678264507F00026C5AD /* AppDelegate.m in Sources */,
+				9B1ED689264507F20026C5AD /* main.m in Sources */,
+				9B1ED67B264507F00026C5AD /* SceneDelegate.m in Sources */,
+				9B1ED6922645083D0026C5AD /* SkyEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B1ED67F264507F00026C5AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B1ED680264507F00026C5AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B1ED684264507F20026C5AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B1ED685264507F20026C5AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B1ED68A264507F20026C5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B1ED68B264507F20026C5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B1ED68D264507F20026C5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KF86WFU5VY;
+				INFOPLIST_FILE = Sky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luke.Sky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		9B1ED68E264507F20026C5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KF86WFU5VY;
+				INFOPLIST_FILE = Sky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luke.Sky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B1ED66E264507F00026C5AD /* Build configuration list for PBXProject "Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1ED68A264507F20026C5AD /* Debug */,
+				9B1ED68B264507F20026C5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B1ED68C264507F20026C5AD /* Build configuration list for PBXNativeTarget "Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1ED68D264507F20026C5AD /* Debug */,
+				9B1ED68E264507F20026C5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B1ED66B264507F00026C5AD /* Project object */;
+}
